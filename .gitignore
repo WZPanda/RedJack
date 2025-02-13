@@ -1,0 +1,8 @@
+*.yyc
+*.yyp~
+*.yy~
+*.log
+.cache/
+.gml/.gml.tmp/
+extensions/.gmx/
+backup/

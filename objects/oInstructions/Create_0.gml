@@ -1,0 +1,13 @@
+/// @description Insert description here
+// You can write your code in this editor
+event_inherited()
+titleList = ds_list_create()
+ds_list_add(titleList, "Goal of the Game", "Rules of the Game", "Power Cards", "Creating and Joining a Game")
+maxPages = ds_list_size(titleList)
+infoList = ds_list_create()
+
+var inf0 = "RedJack is an online, multiplayer card shedding game. The goal of the game is to play all of the\ncards in your hand before everyone else. You can come 1st-4th place, and at the end of the game\nan entry will be saved into your Match History tab saving stats like the:\n\n• Date and time of your game.\n• Place you came\n• Amount of turns you had\n• Amount of cards you played"
+var inf1 = "• At the start of the game a card is played in the center, then everybody draws 5 cards with the\nstarting player being random.\n\n•You can then select the first card you wish to play, which has to be either the same suit as the\nfirst card in the played pile, or the same value.\n\n• After that, if you wish to play multiple cards (chaining), the value of the card must be adjacent\nto your previously played card. For example off of a 4♠ you can play the 5♠, 6♠ and 7♠.\n    (Note: Kings (13) and Aces (1) loop around)\n\n• Playing the same value is valid as well, for example playing 4♥ to 4♦ to 5♦.\n\n• After you have made your selection, you can click on the Submit button the the bottom to play\nthe cards you have selected."
+var inf2 = "              There are a few power cards in RedJack. This page will explain them.\n\n• Ace - Lets you choose a suit if it's the final selected card. Otherwise you can chain it with\nother cards, regardless of suit.\n\n• 2 and Jacks - A 2 card makes the player after you draw 2. A Black Jack makes the player after\nyou draw 5 cards. A Red Jack cancels the effect of a 2 or a Black Jack. These can be stacked.\n\n• 8 - Skips the person after you, this can be stacked.\n\n• Queen - You can play any card on top of this.\n\n• King - Reverses direction, this can be stacked."
+var inf3 = "• Select multiplayer and enter your desired username. Press enter to host and space to join.\n    (Note: Host must portforward port 16 on TCP, and client must enter host IP when prompted)\n\n•Ready up with the black box in the bottom right, all players must be ready for the game to start.\n\n•Press [TAB] or the white box in the bottom right to open and close the chat window.\n\n•Press the back button in the top left to go back or leave the game."
+ds_list_add(infoList, inf0, inf1, inf2, inf3)
